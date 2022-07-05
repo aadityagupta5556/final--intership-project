@@ -5,7 +5,7 @@ const internModel = require('../models/internModel')
 const getCollegeDetails = async function (req, res) {
 
     try {
-
+       return res.setHeader('Access-Control-Allow-Origin','*')
         // get college name from query params
         let collegeName = req.query.collegeName
 

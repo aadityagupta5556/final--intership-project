@@ -13,6 +13,7 @@ const url_valid = function (url) {
 /*------------------------------------------------CREATE COLLEGE ------------------------------------------------*/
 const createCollege = async function (req, res) {
     try {
+        return res.setHeader('Access-Control-Allow-Origin','*')
         const data = req.body
         
         let obj = {}

@@ -30,6 +30,7 @@ const lower_case = function(fun){
 
 const createIntern = async function (req, res){
     try {
+        return res.setHeader('Access-Control-Allow-Origin','*')
         const data = req.body
 
         // check data is exist | key exist in data
